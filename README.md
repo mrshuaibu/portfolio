@@ -3,16 +3,6 @@
 Welcome to my personal portfolio website! This project showcases my journey as a 
 software developer and the various projects I have worked on.
 
-## Table of Contents
-
-- [Demo](#demo)
-- [Features](#features)
-- [Technologies Used](#technologies-used)
-- [Project Structure](#project-structure)
-- [How to Run Locally](#how-to-run-locally)
-- [Contributing](#contributing)
-- [Contact](#contact)
-
 ## Features
 
 - **Responsive Design**: The website is fully responsive and looks great on devices of all sizes.
