@@ -65,19 +65,19 @@ html {
 .get-in-touch {
     height: 40px;
     width: 150px;
-    border-radius: 6px;
-    background-color: #4a90e2;
+    border-radius: var(--app-box-radius);
+    background-color: var(--app-button-color);
     padding: 10px 15px;
     text-align: center;
-    color: #fff;
+    color: var(--app-font-color);
     font-size: 15px;
     font-weight: 600;
     text-decoration: none;
 }
 
 .get-in-touch:hover {
-    color: #fff;
-    background-color: #62aef7;
+    color: var(--app-font-color);
+    background-color: var(--app-hover-cover);
 }
 
 .bar {
@@ -86,12 +86,12 @@ html {
     height: 3px;
     margin:  5px auto;
     transition: all 0.3s ease-in-out;
-    background-color: #fff;
+    background-color: var(--app-font-color);
 }
 
 a {
     text-decoration: none;
-    color: #fff;
+    color: var(--app-font-color);
 }
 
 a:hover {
@@ -101,6 +101,7 @@ a:hover {
 @media (max-width: 768px) {
     .menu-icon {
         display: block;
+        line-height: 70px
     }
 
     .get-in-touch-button {
@@ -108,7 +109,6 @@ a:hover {
         left: -100%;
         top: 50px;
         width: 100%;
-        background-color: #1a1d28;
         height: 100%;
         transition: left 0.3s ease-in-out;
         z-index: 1000;
@@ -116,6 +116,7 @@ a:hover {
         justify-content: center;     
         align-items: center;
         text-align: center;
+        line-height: 70px;
     }
 
     .get-in-touch-button.active {
@@ -164,6 +165,14 @@ header, footer {
 /*Landing page*/
 /*--------------------------------*/
 
+.main-bg {
+    background-image: url('../img/landing5.jpg');
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
 .landing-page {
     min-height: 100vh;
     display: flex;
@@ -178,7 +187,7 @@ h1 {
     padding: 10px;
     font-size: 40px;
     font-weight: 900;
-    color: #fff;
+    color: var(--app-font-color);
 }
 
 .subheading {
@@ -189,7 +198,7 @@ h1 {
     font-weight: 500;
     line-height: 1.5;
     margin-top: -10px;
-    color: #fff;
+    color: var(--app-font-color);
 }
 
 .two-buttons {
@@ -206,9 +215,9 @@ h1 {
     margin: 20px 0;
     height: 40px;
     width: 150px;
-    border-radius: 6px;
-    color: #fff;
-    background-color: #4a90e2;
+    border-radius: var(--app-box-radius);
+    color: var(--app-font-color);
+    background-color: var(--app-button-color);
     padding: 10px 15px;
     text-align: center;
     font-size: 18px;
@@ -217,7 +226,7 @@ h1 {
 }
 
 .download-cv-button:hover {
-    color: #fff;
+    color: var(--app-font-color);
     background-color: var(--app-hover-cover);
 }
 
@@ -229,9 +238,9 @@ h1 {
     margin: 20px 0;
     height: 40px;
     width: 150px;
-    border-radius: 6px;
+    border-radius: var(--app-box-radius);
     color: #000;
-    background-color: #fff;
+    background-color: var(--app-font-color);
     padding: 10px 15px;
     text-align: center;
     font-size: 18px;
@@ -277,7 +286,7 @@ article {
 article p {
     max-width: 700px;
     padding: 5px;
-    color: #fff;
+    color: var(--app-font-color);
     line-height: 1.5;
 }
 
@@ -286,7 +295,7 @@ h2 {
     text-align: center;
     font-size: 35px;
     font-weight: 600;
-    color: #fff;
+    color: var(--app-font-color);
 }
 
 .height {
@@ -302,8 +311,8 @@ h2 {
     align-items: center;
     text-align: center;
     margin: 5px;
-    border-radius: 6px;
-    color: #fff;
+    border-radius: var(--app-box-radius);
+    color: var(--app-font-color);
 }
 
 .icon {
@@ -318,7 +327,6 @@ h2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* align-items: center; */
     text-align: left;
 
     p {
@@ -331,7 +339,7 @@ h3 {
     text-align: center;
     font-size: 34px;
     font-weight: 600;
-    color: #fff;
+    color: var(--app-font-color);
 }
 
 /*--------------------------------*/
@@ -344,7 +352,7 @@ h3 {
     flex-wrap: wrap;
 
     p {
-        color: #fff;
+        color: var(--app-font-color);
     }
 }
 
@@ -352,7 +360,7 @@ h3 {
     flex: 0 0 auto;
     width: calc(33.333333% - 13.333333px);
     height: auto;
-    border-radius: 6px;
+    border-radius: var(--app-box-radius);
     border: 1px solid rgb(0 0 0 / 0.2);
 
     p {
@@ -373,7 +381,7 @@ h3 {
     margin: 25px 5px;
     align-self: flex-start;
     height: 40px;
-    border-radius: 6px;
+    border-radius: var(--app-box-radius);
     background-color: #4a90e2;
     font-size: 15px;
     font-weight: 600;
@@ -381,7 +389,7 @@ h3 {
     text-align: center;
 
     a {
-        color: #fff;
+        color: var(--app-font-color);
     }
 }
 
@@ -391,8 +399,8 @@ h3 {
     margin: 25px 5px;
     align-self: flex-start;
     height: 40px;
-    border-radius: 6px;
-    background-color: #fff;
+    border-radius: var(--app-box-radius);
+    background-color: var(--app-font-color);
     font-size: 15px;
     font-weight: 600;
     text-decoration: none;
@@ -404,7 +412,7 @@ h3 {
 }
 
 .button:hover {
-    color: #fff;
+    color: var(--app-font-color);
     background-color: var(--app-hover-cover);
 }
 
@@ -420,7 +428,7 @@ h3 {
     font-weight: 500;
     line-height: 1.5;
     margin-top: -10px;
-    color: #fff;
+    color: var(--app-font-color);
 }
 
 h4 {
@@ -428,7 +436,7 @@ h4 {
     text-align: center;
     font-size: 33px;
     font-weight: 600;
-    color: #fff;
+    color: var(--app-font-color);
 }
 
 .p {
@@ -443,19 +451,19 @@ h4 {
 .view-github {
     height: 40px;
     width: 150px;
-    border-radius: 6px;
-    background-color: #4a90e2;
+    border-radius: var(--app-box-radius);
+    background-color: var(--app-button-color);
     padding: 10px 15px;
     text-align: center;
-    color: #fff;
+    color: var(--app-font-color);
     font-size: 15px;
     font-weight: 600;
     text-decoration: none;
 }
 
 .view-github:hover {
-    color: #fff;
-    background-color: #62aef7;
+    color: var(--app-font-color);
+    background-color: var(--app-hover-cover);
 }
 
 /*--------------------------------*/
@@ -510,7 +518,7 @@ h4 {
         font-weight: 500;
         line-height: 1.5;
         margin-top: -10px;
-        color: #fff;
+        color: var(--app-font-color);
     }
 
     .subheading2 {
@@ -520,7 +528,7 @@ h4 {
         font-weight: 500;
         line-height: 1.5;
         margin-top: -10px;
-        color: #fff;
+        color: var(--app-font-color);
     }
 }
 
@@ -557,7 +565,7 @@ h4 {
         font-weight: 500;
         line-height: 1.5;
         margin-top: -10px;
-        color: #fff;
+        color: var(--app-font-color);
     }
     .subheading2 {
         padding: 10px;
@@ -566,7 +574,7 @@ h4 {
         font-weight: 500;
         line-height: 1.5;
         margin-top: -10px;
-        color: #fff;
+        color: var(--app-font-color);
     }
 }
 
@@ -575,7 +583,7 @@ h4 {
 /*--------------------------------*/
 
 footer {
-    color: #fff;
+    color: var(--app-font-color);
 }
 
 .footer {
@@ -599,7 +607,7 @@ footer {
 
 .social-list li a {
     margin-right: 15px;
-    color: #fff;
+    color: var(--app-font-color);
 }
 
 .social-list li a:hover {

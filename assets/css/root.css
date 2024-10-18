@@ -1,13 +1,9 @@
 :root {
-    --app-font-color: rgb(255, 255, 255);
-    --app-hover-cover: rgb(181, 210, 249);
-    --app-button-color: rgb(97, 71, 189);
-    --app-box-color: rgb(230, 228, 237);
-    --app-frosted-color: rgb(255 255 255 / 0.1);
+    --app-font-color: #fff;
+    --app-button-color: #4a90e2;
+    --app-hover-cover: #62aef7;
     --app-button-radius: 50px;
-    --app-box-radius: 8px;
-    --app-box-shadow: 0px 0px 4px rgb(0 0 0 / 10%);
-    --app-background-color: #ececec;
+    --app-box-radius: 6px;
     --app-dark-mode: #454579;
     --app-dark-mode1: #3e3e6c;
   }
