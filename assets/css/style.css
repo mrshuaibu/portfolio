@@ -353,7 +353,7 @@ h3 {
     width: calc(33.333333% - 13.333333px);
     height: auto;
     border-radius: 6px;
-    box-shadow: 1px 1px 2px rgb(0 0 0 / 20%);
+    border: 1px solid rgb(0 0 0 / 0.2);
 
     p {
         margin: 10px;
@@ -361,6 +361,11 @@ h3 {
     }
 }
 
+.links {
+    justify-content: center;     
+    align-items: center;
+    text-align: center;
+}
 
 .button {
     padding: 5px;
